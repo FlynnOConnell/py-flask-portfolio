@@ -1,0 +1,33 @@
+<!doctype html>
+<head>
+    <title>Graph Viewer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <script src= "{{ url_for('static', filename="bootstrap.min.js") }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <a id="top"></a>
+        <nav class="navbar navbar-expand-md bg-dark">
+            <ul class="nav navbar-nav text-nowrap flex-row mx-md-auto order-1 order-md-2">
+                <li class="nav-item">
+                    <h1 href="#top">
+                        Graphs
+                    </h1>
+                </li>
+            </ul>
+        </nav>
+    <div id="UnderNavContainer">
+            {% if url %}
+                {% for site in url %}
+                    <div>
+                        <figure>
+                            <img src="{{ site }}" alt="Something went wrong">
+                            <figcaption> Caption </figcaption>
+                        </figure>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+</body>
