@@ -10,7 +10,7 @@ venv/
 __pycache__/
 
 instance/
-
+*credentials.json
 
 .pytest_cache/
 .coverage
