@@ -3,7 +3,7 @@
 /.idea/inspectionProfiles/Project_Default.xml
 /.idea/web-dataviewer.iml
 /.idea/modules.xml
-
+/.idea/**
 venv/
 
 *.pyc
