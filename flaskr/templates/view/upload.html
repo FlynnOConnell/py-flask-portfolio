@@ -3,26 +3,17 @@
     <title>Graph Viewer</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
     <script src= "{{ url_for('static', filename="bootstrap.min.js") }}"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='homestyle.css') }}">
 </head>
 
 <body>
-    <a id="top"></a>
-        <nav class="navbar navbar-expand-md bg-dark">
-            <ul class="nav navbar-nav text-nowrap flex-row mx-md-auto order-1 order-md-2">
-                <li class="nav-item">
-                    <h1 href="#top">
-                        Graphs
-                    </h1>
-                </li>
-            </ul>
-        </nav>
+{% include 'view/navigation-side.html' %}
     <div id="UnderNavContainer">
             {% if url %}
                 {% for site in url %}
                     <div>
                         <figure>
-                            <img src="{{ site }}" alt="Something went wrong">
+                            <img src="{{ site }}" alt="Something went wrong" id="graph">
                             <figcaption> Caption </figcaption>
                         </figure>
                     </div>
