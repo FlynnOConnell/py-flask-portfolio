@@ -12,3 +12,4 @@ bp = Blueprint('home', __name__)
 def get_img():
     urls = [x for x in get_bucket_images()]
     return render_template('home/index.html', url=urls)
+

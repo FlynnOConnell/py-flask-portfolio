@@ -1,6 +1,14 @@
+"""
+web_dataviewer/__init__.py
+
+Entry point for dataviewer app. Flask docs recommend larger app initializing to be done here.
+"""
+
+
 import os
 from flask import (Flask, current_app)
 from werkzeug.local import LocalProxy
+
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\flynn\repos\web_dataviewer\JSON_credentials.json"
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
@@ -35,6 +43,6 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    from app import home, view
+    from flaskr import home
     app.register_blueprint(home.bp)
     return app
