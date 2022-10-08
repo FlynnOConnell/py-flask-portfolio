@@ -17,6 +17,17 @@ iframe#graph {
     word-wrap: break-word !important;
 }
 
+.box#resume{
+    width: 250px;
+    border: 5px solid black;
+}
+.box.large#resume{
+    height: 300px;
+}
+.box.small#resume{
+    height: 100px;
+}
+
 body {
 	margin: 0;
 }
