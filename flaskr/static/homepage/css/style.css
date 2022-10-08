@@ -10,6 +10,18 @@ a#site-text { color: #000000;
     font-weight: 300;
     line-height: 58px;}
 
+#myresume {
+	position: relative;
+	display: flex !important;
+	justify-content: center;
+	width:70%;
+	height:200px;
+	background:#FFF;
+	margin:40px auto;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+	 box-shadow: 0 10px 6px -6px #777;
+}
 
 p {
     color: #adb7bd;
@@ -50,6 +62,8 @@ img#icon {
     width:  30px;
     height: 30px;
 }
+
+
 
 figure {
   display: flex;

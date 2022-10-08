@@ -179,12 +179,8 @@
     )
   })()
 }())
-//
-// $( document ).ready(function() {
-//   var interactive = document.getElementById("interactive")
-//
-//   $.post("/postmethod", {
-//
-//   })
-//
-// });
+
+document.getElementById('button').addEventListener('click',function() {
+  document.getElementById('change').style.backgroundImage = 'url(https://futurism.com/wp-content/uploads/2015/11/neildegrassetyson.jpg)';
+})
+

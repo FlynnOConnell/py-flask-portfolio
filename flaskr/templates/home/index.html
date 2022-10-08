@@ -62,6 +62,36 @@
 			<div class="hr"></div>
 		</section>
 
+		<section>
+			<div style="justify-content: center; display: grid; align-content: center;">
+				<h2 class="divider line glow">
+					My resume.
+					<hr style="margin-bottom: 0;"/>
+				</h2>
+			</div>
+			<div class="hr"></div>
+		</section>
+		<a id="resume"></a>
+
+		<section>
+			<div class="container">
+				<div class = "btn-group btn-group-toggle btn-sm btn-dark" style="display: flex;">
+					<label class="btn btn-secondary active btn-sm">
+						<input type="radio" name="options" id="option1" checked> Software Dev
+					</label>
+
+
+					<label class="btn btn-secondary active btn-sm">
+						<input type="radio" name="options" id="option1" checked> Data Science
+					</label>
+				</div>
+			</div>
+			<div id="myresume" style="width: 100%;">
+				<img id="resume" src="{{ url_for('static', filename="homepage/images/FlynnOConnell_Resume_100822.jpg")
+						}}" alt="">
+			</div>
+		</section>
+
 		<section class="features-extended section">
 			<div class="features-extended-inner section-inner">
 				<div class="features-extended-wrap">
@@ -87,24 +117,6 @@
 				</div>
 			</div>
 		</section>
-		<section>
-			<div style="justify-content: center; display: grid; align-content: center;">
-				<h2 class="divider line glow">
-					Auto-upload figures and captions from Google Cloud Storage.
-					<hr style="margin-bottom: 0;"/>
-				</h2>
-			</div>
-			<div class="hr"></div>
-		</section>
-	<a id="resume"></a>
-		<section class="features-extended section">
-			<div id="resume" class="box">
-				<img src="{{ url_for('static', filename="homepage/images/FlynnOConnell_Resume_100822.jpg") }}" 
-				     style="max-width: 100%; max-height: 100%; display: block;" alt="">
-			</div>
-		</section>
-
-
 	</main>
 
 	<footer class="site-footer">
