@@ -6,6 +6,17 @@ html {
 iframe {
 	border: none;
 }
+
+div#interactive {
+    width: 100% !important;
+    word-wrap: break-word !important;
+}
+
+iframe#graph {
+    width: 100% !important;
+    word-wrap: break-word !important;
+}
+
 body {
 	margin: 0;
 }

@@ -4,6 +4,8 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:image"
+	      content="{{ url_for('static', filename="")  }}"/>
 	<title>Flynn's Dataviewer</title>
 	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
 	<link rel="stylesheet" href=" {{ url_for('static', filename="homepage/css/homestyle.css") }}">
@@ -36,20 +38,14 @@
 						<h1 class="hero-title mt-0">Flynn's dataviewer</h1>
 						<p class="hero-paragraph"> Display or embed graphs.</p>
 						<div class="hero-cta">
-							<a class="button button-primary button-wide-mobile" href="#">My resume.</a>
+							<a class="button button-primary button-wide-mobile" href="#resume">My resume.</a>
 						</div>
 					</div>
-					<div>
-						<p style="text-align: left; justify-content:
-						left;">
-							Neural Activity: Eating Peanuts
-						</p>
-					</div>
 					<div class="mockup-container" id="interactive">
-						<iframe
-								width="900"
-								height="800"
-								src="{{ url_for('static', filename="homepage/images/surface.html") }}" >
+						<iframe id="graph"
+						        width="900"
+						        height="800"
+						        src="{{ url_for('static', filename="homepage/images/surface2.html") }}" >
 						</iframe>
 					</div>
 				</div>
@@ -99,6 +95,7 @@
 			</div>
 			<div class="hr"></div>
 		</section>
+	<a id="resume"></a>
 		<section class="features-extended section">
 			<div class="container">
 				<iframe
