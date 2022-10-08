@@ -9,22 +9,41 @@
 	      content="{{ url_for('static', filename="homepage/images/thumbnail.jpg")  }}"/>
 	<title>Flynn's Dataviewer</title>
 	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/e0a01fad4b.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href=" {{ url_for('static', filename="homepage/css/homestyle.css") }}">
 	<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+
 </head>
 
 <body class="is-boxed has-animations">
 <div class="body-wrap boxed-container">
-	<header class="site-header text-light">
-		<div class="container">
-			<div class="site-header-inner">
-				<div class="brand header-brand">
-					<h1 class="m-0">
-
-					</h1>
-				</div>
-			</div>
+	<header class="site-header">
+		<div class="site-header-inner">
+		<ul class="wrapper">
+			<li class="icon email">
+				<span class="tooltip">Email</span>
+				<span><i class="fa-solid fa-envelope"></i></span>
+			</li>
+			<li class="icon mobile">
+				<span class="tooltip">Mobile</span>
+				<span><i class="fa-solid fa-mobile"></i></span>
+			</li>
+			<li class="icon github">
+				<span class="tooltip">Github</span>
+				<span><i class="fab fa-github"></i></span>
+			</li>
+			<li class="icon linkedin">
+				<span class="tooltip">Linkedin</span>
+				<span><i class="fab fa-linkedin"></i></span>
+			</li>
+			<li class="icon twitter">
+				<span class="tooltip">Twitter</span>
+				<span><i class="fab fa-twitter"></i></span>
+			</li>
+		</ul>
 		</div>
+
+
 	</header>
 
 	<main>
@@ -66,18 +85,17 @@
 			<div class="container">
 				<div class = "btn-group btn-group-toggle btn-sm btn-dark" style="display: flex;">
 					<label class="btn btn-secondary active btn-sm">
-						<input type="radio" name="options" id="option1" checked> Software Dev
+						<input type="radio" name="options" id="button-dev" onclick="mainFunction()" checked>
+						Software Dev
 					</label>
-
-
 					<label class="btn btn-secondary active btn-sm">
-						<input type="radio" name="options" id="option1" checked> Data Science
+						<input type="radio" name="options" id="button-data" onclick="mainFunction()" checked>
+						Data Science
 					</label>
 				</div>
 			</div>
 			<div id="myresume" style="width: 100%;">
-				<img id="resume" src="{{ url_for('static', filename="homepage/images/FlynnOConnell_Resume_100822.jpg")
-						}}" alt="">
+				<img id="resume" src="/static/homepage/images/Resume_Software.png" alt="Resume-Software" >
 			</div>
 		</section>
 		<section>
@@ -174,6 +192,8 @@
 		</div>
 	</footer>
 </div>
+<script src="{{ url_for('static', filename="homepage/js/custom.js") }}"></script>
 <script src="{{ url_for('static', filename="homepage/js/main.min.js") }}"></script>
+
 </body>
 </html>
