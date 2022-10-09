@@ -16,7 +16,7 @@
 	<script src="https://kit.fontawesome.com/e0a01fad4b.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="has-animations">
+<body class="has-animations flex-wrapper">
 <div class="boxed-container has-animations">
 	<header class="site-header has-animations has-bottom-divider">
 		<div id="top">
@@ -128,7 +128,6 @@
 				</div>
 			</div>
 		</section>
-
 		<section>
 			<div style="justify-content: center; display: grid; align-content: center;">
 				<h2 class="divider line glow">
@@ -157,35 +156,17 @@
 			</div>
 		</section>
 	</main>
-	<footer class="site-footer">
+	<footer>
 		<div class="footer-particles-container">
 			<canvas id="footer-particles"></canvas>
 		</div>
-		<div class="site-footer-top">
-			<section class="cta section text-light">
-				<div class="container-sm">
-					<div class="cta-inner section-inner">
-						<div class="cta-header text-center">
-							<h2 class="section-title mt-0">That's it for now</h2>
-							<p class="section-paragraph"></p>
-							<div class="cta-cta">
-								<a class="button button-primary button-wide-mobile" href="#">Back to the top!</a>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-		<div class="site-footer-bottom">
-			<div class="container">
-				<div class="site-footer-inner">
-					<div class="brand footer-brand">
-						<a href="https://github.com/NeuroPyPy/CalciumAnalysis/blob/master/LICENSE"><img alt="GitHub
-						license" src="{{ url_for('static', filename="homepage/images/full_logo_2.png") }}"></a>
-					</div>
-					<div class="footer-copyright">&copy; MIT License</div>
-				</div>
+		<div class="under-footer">
+			<div>
+				<img alt="Logo" src="{{ url_for('static', filename="homepage/images/full_logo_2.png") }}"
+				     style="height: auto;">
+			</div>
+			<div>
+				&copy; MIT License
 			</div>
 		</div>
 	</footer>
@@ -194,4 +175,5 @@
 <script src="{{ url_for('static', filename="homepage/js/main.min.js") }}"></script>
 
 </body>
+
 </html>

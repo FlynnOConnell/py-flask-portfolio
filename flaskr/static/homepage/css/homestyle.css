@@ -13,7 +13,7 @@ span.badges {
  HEADER, LINKS, MENU
   */
 
-header, footer {
+header {
 	display: block;
 	font-family: Raleway;
 	margin: 0 auto;
@@ -21,9 +21,16 @@ header, footer {
 	text-align: center;
 }
 
-/* .badges { */
-/* 	display: inline-flex; */
+/* footer { */
+/* 	display: flex; */
+/* 	justify-content: center; */
 /* } */
+.under-footer {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 .site-header {
 	padding: 24px 0;
@@ -1463,124 +1470,13 @@ button,input,select,textarea,label {
 		padding-bottom: 88px;
 	}
 }
-/*
 
-FOOTER--------------------------------------
-
- */
-.site-footer {
-	position: relative;
-}
-
-.site-footer::before {
-	content: '';
-	position: absolute;
-	top: -76px;
-	left: calc(50% - 360px);
-	width: 720px;
-	height: 291px;
-	background-size: 720px 291px;
-	background-repeat: no-repeat;
-}
-
-.site-footer .footer-particles-container {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
-
-.site-footer-bottom {
-	font-size: 14px;
-	line-height: 22px;
-	letter-spacing: 0px;
-	z-index: 1;
-}
-
-.site-footer-bottom a {
-	text-decoration: none;
-}
-
-.site-footer-bottom a:hover,.site-footer-bottom a:active {
-	text-decoration: underline;
-}
-
-.site-footer-inner {
-	position: relative;
+.flex-wrapper {
 	display: flex;
-	flex-wrap: wrap;
-	padding-top: 48px;
-	padding-bottom: 48px;
-	position: relative;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
 }
-
-.site-footer-inner::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	display: block;
-	height: 1px;
-}
-
-.footer-brand,.footer-links,.footer-social-links,.footer-copyright {
-	flex: none;
-	width: 100%;
-	display: inline-flex;
-	justify-content: center;
-}
-
-.footer-brand,.footer-links,.footer-social-links {
-	margin-bottom: 24px;
-}
-
-.footer-links li+li,.footer-social-links li+li {
-	margin-left: 16px;
-}
-
-.footer-social-links li {
-	display: inline-flex;
-}
-
-.footer-social-links li a {
-	padding: 8px;
-}
-
-@media (min-width: 641px) {
-	.site-footer::before {
-		top: -152px;
-		left: calc(50% - 720px);
-		width: 1440px;
-		height: 582px;
-		background-size: 1440px 582px;
-	}
-
-	.site-footer-inner {
-		justify-content: space-between;
-		padding-top: 64px;
-		padding-bottom: 64px;
-	}
-
-	.footer-brand,.footer-links,.footer-social-links,.footer-copyright {
-		flex: 50%;
-	}
-
-	.footer-brand,.footer-copyright {
-		justify-content: flex-start;
-	}
-
-	.footer-links,.footer-social-links {
-		justify-content: flex-end;
-	}
-
-	.footer-links {
-		order: 1;
-		margin-bottom: 0;
-	}
-}
-
 
 #btn-download {
   cursor: pointer;
