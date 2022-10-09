@@ -33,8 +33,10 @@ header {
 
 .under-footer {
 	display: block;
+	justify-content: space-between;
+	align-items: baseline;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: 15px;
 }
 .site-header {
 	padding: 24px 0;
@@ -253,9 +255,12 @@ img,svg {
 	display: block;
 }
 
+
+
 hr {
   border: none !important;
-  height: 1px;
+width: 50vh;
+height: 2px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), darkgray, rgba(0, 0, 0, 0));
 }
 
@@ -348,15 +353,20 @@ svg:not(:root) {
 	margin:40px auto;
 }
 
+h2.center {
+	text-align: center;
+}
 
+section {
+	display: block;
+}
 [id^='resume'] {
 	position:relative;
 	-webkit-box-shadow:0 1px 10px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
 	   -moz-box-shadow:0 1px 10px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
 			box-shadow:0 1px 10px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
 }
-[id^='resume']:before, [id^='resume']:after
-{
+[id^='resume']:before, [id^='resume']:after {
   content:"";
 	position:absolute;
 	z-index:-1;
@@ -370,8 +380,7 @@ svg:not(:root) {
 	-moz-border-radius:100px / 10px;
 	border-radius:100px / 10px;
 }
-[id^='resume']:after
-{
+[id^='resume']:after {
   right:10px;
 	left:auto;
 	-webkit-transform:skew(8deg) rotate(3deg);
@@ -1375,9 +1384,6 @@ button,input,select,textarea,label {
 	box-shadow: 0 20px 48px rgba(22,30,42,0.16);
 }
 
-.resume-container {
-
-}
 
 @media (min-width: 641px) {
 	.section-inner {
