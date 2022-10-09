@@ -7,23 +7,25 @@
 	<meta name="description" content="My personal portfolio with some fun things I've done and will continue doing."/>
 	<meta property="og:image"
 	      content="{{ url_for('static', filename="homepage/images/thumbnail.jpg")  }}"/>
-	<title>Flynn's Projects</title>
+	<title>
+		Flynn's Projects
+	</title>
 	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
-
+	<link rel="icon" href=" {{ url_for('static', filename="homepage/images/logo_dev.jpg")  }}"/>
 	<link rel="stylesheet" href=" {{ url_for('static', filename="homepage/css/homestyle.css") }}">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 	<script src="https://kit.fontawesome.com/e0a01fad4b.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="has-animations flex-wrapper">
+<body class="has-animations">
 <div class="boxed-container has-animations">
 	<header class="site-header has-animations has-bottom-divider">
 		<div id="top">
 			<ul class="wrapper">
 				<li class="icon email">
 					<span class="tooltip">Email</span>
-					<span><i class="fa-solid fa-envelope"></i></span>
+					<span><i class="fa-solid fa-envelope fa-icon"></i></span>
 				</li>
 				<li class="icon mobile">
 					<span class="tooltip">Mobile</span>
@@ -44,7 +46,6 @@
 			</ul>
 		</div>
 	</header>
-	<hr />
 	<main>
 		<section class="hero text-center">
 			<div class="hero-particles-container">
@@ -104,28 +105,14 @@
 			</div>
 		</section>
 		<section class="features-extended section">
-			<div class="features-extended-inner section-inner">
-				<div class="features-extended-wrap">
-					<div class="container">
-						{% if url %}
-							{% for site in url %}
-								<div>
-									<div class="feature-extended">
-										<div class="feature-extended-image">
-											<figure>
-												<img src="{{ site }}" alt="Something went wrong">
-											</figure>
-										</div>
-										<div class="feature-extended-body is-revealing">
-											<h3 class="mt-0 mb-16">Amazing features, coming soon.</h3>
-											<p class="m-0">Quam quisque id diam vel quam elementum pulvinar. Ut etiam sit amet nisl purus in mollis nunc. Odio morbi quis commodo odio aenean sed adipiscing diam donec.</p>
-										</div>
-									</div>
-								</div>
-							{% endfor %}
-						{% endif %}
-					</div>
-				</div>
+			<div class="container">
+				{% if url %}
+					{% for site in url %}
+						<figure>
+							<img src="{{ site }}" alt="Something went wrong">
+						</figure>
+					{% endfor %}
+				{% endif %}
 			</div>
 		</section>
 		<section>

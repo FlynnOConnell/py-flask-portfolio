@@ -1,8 +1,18 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
+
 html {
+	box-sizing: border-box;
 	line-height: 1.15;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	background: #ffffff;
+	font-size: 1rem;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 
 span.badges {
@@ -21,17 +31,11 @@ header {
 	text-align: center;
 }
 
-/* footer { */
-/* 	display: flex; */
-/* 	justify-content: center; */
-/* } */
 .under-footer {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
-
-
 .site-header {
 	padding: 24px 0;
 	position: absolute;
@@ -90,11 +94,6 @@ main {
 
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 *:focus,
 *:active {
@@ -227,50 +226,6 @@ canvas {
 	display: inline-block;
 }
 
-[id^='resume'] {
-	position: relative;
-	top: 10px;
-	justify-content: center;
-	height: 1300px;
-	width:1070px;
-	background:#FFF;
-	margin:40px auto;
-}
-
-
-[id^='resume'] {
-	position:relative;
-	-webkit-box-shadow:0 1px 10px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
-	   -moz-box-shadow:0 1px 10px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
-			box-shadow:0 1px 10px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
-}
-[id^='resume']:before, [id^='resume']:after
-{
-  content:"";
-	position:absolute;
-	z-index:-1;
-	-webkit-box-shadow:0 0 60px rgba(0,0,0,0.8);
-	-moz-box-shadow:0 0 60px rgba(0,0,0,0.8);
-	box-shadow:0 0 60px rgba(0,0,0,0.8);
-	top:10px;
-	bottom:10px;
-	left:0;
-	right:0;
-	-moz-border-radius:100px / 10px;
-	border-radius:100px / 10px;
-}
-[id^='resume']:after
-{
-  right:10px;
-	left:auto;
-	-webkit-transform:skew(8deg) rotate(3deg);
-	   -moz-transform:skew(8deg) rotate(3deg);
-		-ms-transform:skew(8deg) rotate(3deg);
-		 -o-transform:skew(8deg) rotate(3deg);
-			transform:skew(8deg) rotate(3deg);
-}
-
-
 button, input, select, textarea, label{
 	padding: 10px;
 }
@@ -299,14 +254,9 @@ img,svg {
 }
 
 hr {
-	box-sizing: content-box;
-	height: 0;
-	overflow: visible;
-}
-
-pre {
-	font-family: monospace, monospace;
-	font-size: 1em;
+  border: none !important;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), darkgray, rgba(0, 0, 0, 0));
 }
 
 a {
@@ -377,6 +327,49 @@ img {
 
 svg:not(:root) {
 	overflow: hidden;
+}
+
+
+[id^='resume'] {
+	position: relative;
+	top: 10px;
+	height: 1300px;
+	width:1070px;
+	background:#FFF;
+	margin:40px auto;
+}
+
+
+[id^='resume'] {
+	position:relative;
+	-webkit-box-shadow:0 1px 10px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+	   -moz-box-shadow:0 1px 10px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+			box-shadow:0 1px 10px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+}
+[id^='resume']:before, [id^='resume']:after
+{
+  content:"";
+	position:absolute;
+	z-index:-1;
+	-webkit-box-shadow:0 0 60px rgba(0,0,0,0.8);
+	-moz-box-shadow:0 0 60px rgba(0,0,0,0.8);
+	box-shadow:0 0 60px rgba(0,0,0,0.8);
+	top:10px;
+	bottom:10px;
+	left:0;
+	right:0;
+	-moz-border-radius:100px / 10px;
+	border-radius:100px / 10px;
+}
+[id^='resume']:after
+{
+  right:10px;
+	left:auto;
+	-webkit-transform:skew(8deg) rotate(3deg);
+	   -moz-transform:skew(8deg) rotate(3deg);
+		-ms-transform:skew(8deg) rotate(3deg);
+		 -o-transform:skew(8deg) rotate(3deg);
+			transform:skew(8deg) rotate(3deg);
 }
 
 /*
@@ -469,28 +462,11 @@ template {
 	display: none;
 }
 
-html {
-	box-sizing: border-box;
-}
-
 *,*:before,*:after {
 	box-sizing: inherit;
 }
 
-body {
-	background: #fff;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-}
 
-hr {
-	border: 0;
-	display: block;
-	height: 1px;
-	background: #E4E8EE;
-	margin-top: 24px;
-	margin-bottom: 24px;
-}
 
 ul,ol {
 	margin-top: 0;
@@ -555,14 +531,6 @@ html {
 	line-height: 30px;
 }
 
-body {
-	color: #6B7A90;
-	font-size: 1rem;
-}
-
-body,button,input,select,textarea {
-	font-family: "Heebo", sans-serif;
-}
 
 a {
 	color: #4234F8;
@@ -711,29 +679,6 @@ p {
 	margin-bottom: 24px;
 }
 
-dfn,cite,em,i {
-	font-style: italic;
-}
-
-blockquote {
-	color: #6B7A90;
-	font-style: italic;
-	margin-top: 24px;
-	margin-bottom: 24px;
-	margin-left: 24px;
-}
-
-blockquote::before {
-	content: "\201C";
-}
-
-blockquote::after {
-	content: "\201D";
-}
-
-blockquote p {
-	display: inline;
-}
 
 address {
 	color: #6B7A90;
@@ -742,10 +687,6 @@ address {
 	border-color: #E4E8EE;
 	padding: 24px 0;
 	margin: 0 0 24px;
-}
-
-pre,pre h1,pre h2,pre h3,pre h4,pre h5,pre h6,pre .h1,pre .h2,pre .h3,pre .h4,pre .h5,pre .h6 {
-	font-family: "Courier 10 Pitch", Courier, monospace;
 }
 
 pre,code,kbd,tt,var {
@@ -874,40 +815,6 @@ button,input,select,textarea,label {
 
 .text-secondary {
 	color: #FF6C50;
-}
-
-.has-top-divider {
-	position: relative;
-}
-
-.has-top-divider::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	display: block;
-	height: 1px;
-	background: #E4E8EE;
-}
-
-.has-bottom-divider {
-	position: relative;
-}
-
-.has-bottom-divider::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	display: block;
-	height: 1px;
-	background: #E4E8EE;
-}
-
-.sr .has-animations .is-revealing {
-	visibility: hidden;
 }
 
 .button {
@@ -1453,8 +1360,9 @@ button,input,select,textarea,label {
 }
 
 .boxed-container {
-	max-width: 1440px;
-	margin: 0 auto;
+	width: calc(100vh-60px);
+	height: calc(100vh-60px);
+	margin: 60px;
 	box-shadow: 0 20px 48px rgba(22,30,42,0.16);
 }
 
@@ -1473,7 +1381,6 @@ button,input,select,textarea,label {
 
 .flex-wrapper {
 	display: flex;
-	min-height: 100vh;
 	flex-direction: column;
 	justify-content: space-between;
 }
@@ -1526,4 +1433,14 @@ button,input,select,textarea,label {
 
 .hide-this {
   display: none !important;
+}
+
+/* Custom FONT AWESOME stuff */
+
+i .fa-icon {
+  --fa-style-family: "Font Awesome 6 Pro";
+  --fa-style: 400;
+  --fa-border-color: none;
+  --fa-primary-color: black;
+  --fa-secondary-color: gray;
 }
