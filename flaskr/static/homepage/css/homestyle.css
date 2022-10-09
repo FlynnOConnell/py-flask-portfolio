@@ -329,6 +329,15 @@ svg:not(:root) {
 	overflow: hidden;
 }
 
+.section {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+.section-resume {
+
+}
 
 [id^='resume'] {
 	position: relative;
@@ -1366,10 +1375,8 @@ button,input,select,textarea,label {
 	box-shadow: 0 20px 48px rgba(22,30,42,0.16);
 }
 
-.section-inner {
-	position: relative;
-	padding-top: 48px;
-	padding-bottom: 48px;
+.resume-container {
+
 }
 
 @media (min-width: 641px) {
