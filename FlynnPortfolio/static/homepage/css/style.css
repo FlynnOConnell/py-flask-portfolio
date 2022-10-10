@@ -116,7 +116,7 @@ div.container a
 	justify-content: space-between;}
 
 
-.container-sm {max-width: 848px;}
+
 
 div.highlightTextOut a:hover:before, div.highlightTextIn a:hover:before {
 	transform: scale(1);
