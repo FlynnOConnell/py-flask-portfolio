@@ -40,7 +40,7 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    from FlynnPortfolio import home
+    from . import home
     app.register_blueprint(home.bp)
     return app
 
